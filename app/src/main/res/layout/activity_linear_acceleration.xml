@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearAcceleration"
+    android:background="@drawable/bg"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/proj_gray"
+            android:textSize="32sp"
+            app:fontFamily="@font/montserrat_bold"
+            android:text="LINEAR ACCELERATION"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:orientation="vertical"
+        android:padding="16sp"
+        android:weightSum="6"
+        android:layout_weight="8">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:padding="18sp"
+                android:weightSum="9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="3"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="Current: (m/s^2)"/>
+
+                <TextView
+                    android:id="@+id/acc_x_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="0.89675"/>
+
+                <TextView
+                    android:id="@+id/acc_y_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="-0.63564"/>
+
+                <TextView
+                    android:id="@+id/acc_z_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="8.97895"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.2"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:padding="18sp"
+                android:weightSum="9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="3"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="Minimum: (m/s^2)"/>
+
+                <TextView
+                    android:id="@+id/acc_x_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="0.89675"/>
+
+                <TextView
+                    android:id="@+id/acc_y_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="-0.63564"/>
+
+                <TextView
+                    android:id="@+id/acc_z_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="8.97895"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.2"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:padding="18sp"
+                android:weightSum="9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="3"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="Maximum: (m/s^2)"/>
+
+                <TextView
+                    android:id="@+id/acc_x_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="0.89675"/>
+
+                <TextView
+                    android:id="@+id/acc_y_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="-0.63564"/>
+
+                <TextView
+                    android:id="@+id/acc_z_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    app:fontFamily="@font/montserrat_bold"
+                    android:text="8.97895"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
